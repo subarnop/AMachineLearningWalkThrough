@@ -1,5 +1,5 @@
 # MachineLearningPracticePrograms
-This repository contains programs that are often used in machine learning problem with minimal dependencies. 
+This repository contains programs that are often used in machine learning problems implemented with minimal dependencies. 
 Requirements are python 3.5.3 (or above), numpy, matplotlib(for graphical display).
 
 In this repo we try to implement general machine learning algorithms and calculations for learning purpose. The modules implemented are described below.
