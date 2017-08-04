@@ -11,6 +11,6 @@ A Support Vector Machine (SVM) is a discriminative classifier formally defined b
 A neural network is a a computer system modelled on the human brain and nervous system. It is the simplest implementation with toy dataset that one could imagine. Lets begin my neural network journey with this!
 
 
-### Simplest Convolutional Neural Network ###
+### Simple Convolutional Neural Network ###
 In machine learning, a convolutional neural network (CNN, or ConvNet) is a class of deep, feed-forward artificial neural network that have successfully been applied to analyzing visual imagery. [LeNet](http://yann.lecun.com/exdb/publis/pdf/lecun-98.pdf) is implemented using keras over [mnist](http://yann.lecun.com/exdb/mnist/) dataset. Its one of the simplest forms of ConvNet.
 (CONV-POOL-CONV-POOL-CONV-FC)

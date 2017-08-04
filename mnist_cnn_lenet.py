@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 
 batch_size = 128
 num_classes = 10
-epochs = 12
+epochs = 20
 
 # input image dimensions
 img_rows, img_cols = 28, 28
@@ -42,6 +42,7 @@ print(x_test.shape[0], 'test samples')
 y_train = keras.utils.to_categorical(y_train, num_classes)
 y_test = keras.utils.to_categorical(y_test, num_classes)
 
+#Model definition
 model = Sequential()
 
 model.add(Conv2D(6, kernel_size=(5, 5),
@@ -77,7 +78,8 @@ plt.title('model accuracy')
 plt.ylabel('accuracy')
 plt.xlabel('epoch')
 plt.legend(['train', 'test'], loc='upper left')
-plt.savefig('lenet_acc.png')
+plt.savefig('Results/lenet_acc.png')
+plt.clf()
 
 # Plot history for loss
 plt.plot(history.history['loss'])
@@ -86,7 +88,7 @@ plt.title('model loss')
 plt.ylabel('loss')
 plt.xlabel('epoch')
 plt.legend(['train', 'test'], loc='upper left')
-plt.savefig('lenet_loss.png')
+plt.savefig('Results/lenet_loss.png')
 
 
 print('Test loss:', score[0])
