@@ -42,6 +42,8 @@ print(x_test.shape[0], 'test samples')
 y_train = keras.utils.to_categorical(y_train, num_classes)
 y_test = keras.utils.to_categorical(y_test, num_classes)
 
+#print(x_train)
+print('y_train shape:', y_train.shape)
 #Model definition
 model = Sequential()
 
@@ -93,3 +95,4 @@ plt.savefig('Results/lenet_loss.png')
 
 print('Test loss:', score[0])
 print('Test accuracy:', score[1])
+
