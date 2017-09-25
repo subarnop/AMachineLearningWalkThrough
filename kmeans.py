@@ -86,12 +86,14 @@ def assign_labels_to_centroids(clusters, centroids):
     #assign a label to each centroid
     labelled_centroids = []
     clusters = list(clusters)
+
     for i in range(len(clusters)):
         labels = list(map(lambda x: x[0], clusters[i]))
         # pick the most common label
         most_common = max(set(labels), key=labels.count)
         centroid = (most_common, centroids[i])
         labelled_centroids.append(centroid)
+
     return labelled_centroids
 
 def get_error_rate(digits,labelled_centroids):
@@ -103,6 +105,7 @@ def get_error_rate(digits,labelled_centroids):
             classified_incorrect +=1
     error_rate = classified_incorrect / float(len(digits))
     return error_rate
+    
 def classify_digit(digit, labelled_centroids):
     mindistance = float("inf")
     for (label, centroid) in labelled_centroids:
