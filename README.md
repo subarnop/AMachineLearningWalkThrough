@@ -17,3 +17,6 @@ In machine learning, a convolutional neural network (CNN, or ConvNet) is a class
 
 ### k-means Clustering ###
 k-means clustering aims to partition n observations into k clusters in which each observation belongs to the cluster with the nearest mean, serving as a prototype of the cluster. This results in a partitioning of the data space into Voronoi cells. Lloyd's algorithm for k-means clustering is implemented over mnist dataset with varying k from 5 to 25.
+
+### Recurrent Neural Network###
+A recurrent neural network (RNN) is a class of artificial neural network where connections between units form a directed cycle. This allows it to exhibit dynamic temporal behavior. Unlike feedforward neural networks, RNNs can use their internal memory to process arbitrary sequences of inputs. We develop a word level Vanilla RNN for predicting sequences of text.
