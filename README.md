@@ -20,3 +20,6 @@ k-means clustering aims to partition n observations into k clusters in which eac
 
 ### Recurrent Neural Network ###
 A recurrent neural network (RNN) is a class of artificial neural network where connections between units form a directed cycle. This allows it to exhibit dynamic temporal behavior. Unlike feedforward neural networks, RNNs can use their internal memory to process arbitrary sequences of inputs. We develop a word level Vanilla RNN for predicting sequences of text.
+
+### Logistic Regression ###
+ Logistic regression is a generalized linear model that we can use to model or predict categorical outcome variables. In logistic regression, we’re essentially trying to find the weights that maximize the likelihood of producing our given data and use them to categorize the response variable. We implement a binary classifier in Logistic Regression model that classifies a toy data built on Gaussian distribution.
