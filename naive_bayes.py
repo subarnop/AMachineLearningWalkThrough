@@ -7,6 +7,7 @@ import csv
 import random
 import math
 
+#load csv file
 def loadCSV(filename):
     lines = csv.reader(open(filename))
     dataset = list(lines)
@@ -14,6 +15,7 @@ def loadCSV(filename):
         dataset[i] = [float(x) for x in dataset[i]]
     return dataset
 
+#for splitting the data into train and test set
 def splitDataset(dataset, splitRatio):
     trainSize = int(len(dataset)*splitRatio)
     trainSet = []
@@ -33,9 +35,10 @@ def separateByClass(dataset):
 		separated[vector[-1]].append(vector)
 	return separated
 
+#return mean
 def mean(numbers):
 	return sum(numbers)/float(len(numbers))
-
+#return standard deviation
 def stdev(numbers):
 	avg = mean(numbers)
 	variance = sum([pow(x-avg,2) for x in numbers])/float(len(numbers)-1)
@@ -76,6 +79,7 @@ def calculateClassProbabilities(summaries, inputVector):
 			probabilities[classValue] *= calculateProbability(x, mean, stdev)
 	return probabilities
 
+#largest probability and return the associated class
 def predict(summaries, inputVector):
 	probabilities = calculateClassProbabilities(summaries, inputVector)
 	bestLabel, bestProb = None, -1
@@ -101,11 +105,11 @@ def getAccuracy(testSet, predictions):
 
 def main():
     filename = 'data/pima-indians-diabetes.data.csv'
-    splitRatio = 0.67
+    splitRatio = 0.67 #Splits dataset into 2:1 train and test ratio
     dataset = loadCSV(filename)
     trainingSet, testSet = splitDataset(dataset, splitRatio)
     print('Split dataset ',len(dataset),' rows into train=',len(trainingSet),' and test=',len(testSet),' rows')
-    # prepare model
+    # train model
     summaries = summarizeByClass(trainingSet)
     # test model
     predictions = getPredictions(summaries, testSet)
