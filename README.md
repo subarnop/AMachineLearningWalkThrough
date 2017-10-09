@@ -24,5 +24,8 @@ A recurrent neural network (RNN) is a class of artificial neural network where c
 ### Logistic Regression ###
  Logistic regression is a generalized linear model that we can use to model or predict categorical outcome variables. In logistic regression, we’re essentially trying to find the weights that maximize the likelihood of producing our given data and use them to categorize the response variable. We implement a binary classifier in Logistic Regression model that classifies a toy data built on Gaussian distribution.
 
+ ### Linear Regression ###
+  In statistics, linear regression is a linear approach for modeling the relationship between a scalar dependent variable y and one or more explanatory variables (or independent variables) denoted X. We implement a linear regression model over a toy dataset and computed the root mean sqaure error.
+
  ### Naive Bayesian Classifier ###
   It is a classification technique based on Bayes' Theorem with an assumption of independence among predictors. In simple terms, a Naive Bayes classifier assumes that the presence of a particular feature in a class is unrelated to the presence of any other feature. We implement a binary classifier in Naive Bayesian model that classifies over [pima-indians-diabetes dataset](https://archive.ics.uci.edu/ml/datasets/Pima+Indians+Diabetes) from UCI Machine learning repository.
