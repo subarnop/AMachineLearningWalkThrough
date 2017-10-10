@@ -24,8 +24,11 @@ A recurrent neural network (RNN) is a class of artificial neural network where c
 ### Logistic Regression ###
  Logistic regression is a generalized linear model that we can use to model or predict categorical outcome variables. In logistic regression, we’re essentially trying to find the weights that maximize the likelihood of producing our given data and use them to categorize the response variable. We implement a binary classifier in Logistic Regression model that classifies a toy data built on Gaussian distribution.
 
- ### Linear Regression ###
-  In statistics, linear regression is a linear approach for modeling the relationship between a scalar dependent variable y and one or more explanatory variables (or independent variables) denoted X. We implement a linear regression model over a toy dataset and computed the root mean sqaure error.
+### Linear Regression ###
+  In statistics, linear regression is a linear approach for modeling the relationship between a scalar dependent variable y and one or more explanatory variables (or independent variables) denoted X. We implement a linear regression model over a toy dataset and compute the root mean sqaure error.
 
- ### Naive Bayesian Classifier ###
+### Naive Bayesian Classifier ###
   It is a classification technique based on Bayes' Theorem with an assumption of independence among predictors. In simple terms, a Naive Bayes classifier assumes that the presence of a particular feature in a class is unrelated to the presence of any other feature. We implement a binary classifier in Naive Bayesian model that classifies over [pima-indians-diabetes dataset](https://archive.ics.uci.edu/ml/datasets/Pima+Indians+Diabetes) from UCI Machine learning repository.
+
+### LSTM Network ###
+  Long Short Term Memory networks – usually just called “LSTMs” – are a special kind of RNN, capable of learning long-term dependencies. They were introduced by Hochreiter & Schmidhuber (1997), and were refined and popularized by many people in following work.1 They work tremendously well on a large variety of problems, and are now widely used. All recurrent neural networks have the form of a chain of repeating modules of neural network. In standard RNNs, this repeating module will have a very simple structure, such as a single tanh layer. We implement LSTM network with keras for a regression problem on [International airline passengers dataset](https://datamarket.com/data/set/22u3/international-airline-passengers-monthly-totals-in-thousands-jan-49-dec-60#!ds=22u3&display=line), for estimating the number of passengers next month.
