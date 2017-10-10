@@ -1,12 +1,12 @@
 # MachineLearningPracticePrograms
 This repository contains algorithms and techniques that are often used in machine learning problems implemented with minimal dependencies possible.
-Requirements are python 3.5.3 (or above), keras, numpy, matplotlib(for graphical display).
+Requirements are python 3.5.3 (or above), numpy, matplotlib, and keras(only for LSTM and ConvNet).
 
-In this repo we try to implement general machine learning algorithms and calculations for learning purpose. The modules implemented are described below.
+In this repo we try to implement general machine learning algorithms and calculations for learning purpose. The modules implemented are described below. The codes used in this repo are inspired from various sources on the web.
 
 ### SVM ###
 A Support Vector Machine (SVM) is a discriminative classifier formally defined by a separating hyperplane. In other words, given labeled training data (supervised learning), the algorithm outputs an optimal hyperplane which categorizes new examples. The calculations performed are based on this [link](https://github.com/MaviccPRP/svm/blob/master/svm-primal.ipynb).
-
+[CODE](svm.py)
 ### Simplest Neural Network ###
 A neural network is a a computer system modelled on the human brain and nervous system. It is the simplest implementation with toy dataset that one could imagine. Lets begin my neural network journey with this!
 
