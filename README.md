@@ -7,6 +7,7 @@ In this repo we try to implement general machine learning algorithms and calcula
 ### SVM ###
 A Support Vector Machine (SVM) is a discriminative classifier formally defined by a separating hyperplane. In other words, given labeled training data (supervised learning), the algorithm outputs an optimal hyperplane which categorizes new examples. The calculations performed are based on this [link](https://github.com/MaviccPRP/svm/blob/master/svm-primal.ipynb).
 [CODE](svm.py)
+
 ### Simplest Neural Network ###
 A neural network is a a computer system modelled on the human brain and nervous system. It is the simplest implementation with toy dataset that one could imagine. Lets begin my neural network journey with this!
 
