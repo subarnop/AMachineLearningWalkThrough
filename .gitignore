@@ -4,8 +4,7 @@ __pycache__/
 *$py.class
 # Files
 data/
-transfer_learning.py
-*.h5
+*.h5py
 # C extensions
 *.so
 
