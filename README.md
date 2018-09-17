@@ -1,4 +1,4 @@
-# MachineLearningPracticePrograms
+# AMachineLearningWalkThrough
 This repository contains algorithms and techniques that are often used in machine learning problems implemented with minimal dependencies possible.
 Requirements are python 3.5.3 (or above), numpy, matplotlib, and keras(only for LSTM and ConvNet).
 
